@@ -22,14 +22,14 @@ public class App
        
         //creating object of student 
         Student st = new Student();
-        st.setId(103);
-        st.setName("Rahul");
+        st.setId(108);
+        st.setName("Himanshu");
         st.setCity("Varansi");
         
         //Creating object of Address
         Address address = new Address();
   
-        address.setStreet("Street1");
+        address.setStreet("Street2");
         address.setCity("Banglore");
         address.setOpen(true);
         address.setAddedDate(new Date());
