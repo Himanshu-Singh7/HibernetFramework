@@ -15,6 +15,7 @@ public class Answer {
 	private String answer;
 	
 	@OneToOne(mappedBy = "answer")
+	@JoinColumn(name= "ques_id")
 	private Question question;
 
 	public Question getQuestion() {
