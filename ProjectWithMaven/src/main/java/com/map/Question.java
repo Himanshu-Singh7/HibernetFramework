@@ -1,5 +1,4 @@
 package com.map;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -49,6 +48,8 @@ public class Question {
 	public void setAnswer(Answer answer) {
 		this.answer = answer;
 	}
-    
+
+
+	
     
 }

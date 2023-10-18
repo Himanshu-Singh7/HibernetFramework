@@ -18,5 +18,8 @@
        <mapping class="com.tut.ProjectWithMaven.Address"/>
        <mapping class="com.map.Question"/>
        <mapping class="com.map.Answer"/>
+       <mapping class="com.map1.Instructor"/>
+       <mapping class="com.map1.Course"/>
+       
     </session-factory>
 </hibernate-configuration>
