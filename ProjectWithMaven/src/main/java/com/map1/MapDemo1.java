@@ -43,7 +43,7 @@ public class MapDemo1 {
 		
 		Session s = factory.openSession();
 		Transaction tx = s.beginTransaction();
-		
+		//Save
 		s.save(ins);
 		s.save(course1);
 		s.save(course2);
