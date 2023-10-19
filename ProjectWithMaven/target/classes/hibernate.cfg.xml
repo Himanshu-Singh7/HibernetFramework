@@ -4,22 +4,23 @@
 	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 
 <hibernate-configuration>
-    <session-factory>
-       <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-       <property name="connection.url">jdbc:mysql://localhost:3306/myhiber</property>
-       <property name="connection.username">root</property>
-       <property name="connection.password">12345678</property>
-       <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
-       <property name="hbm2ddl.auto">create</property>
-       <property name="show_sql">true</property>
-       <property name="format_sql">true</property>
-       <property name="hibernate.current_session_context_class">thread</property>
-       <mapping class="com.tut.ProjectWithMaven.Student"/>
-       <mapping class="com.tut.ProjectWithMaven.Address"/>
-       <mapping class="com.map.Question"/>
-       <mapping class="com.map.Answer"/>
-       <mapping class="com.map1.Instructor"/>
-       <mapping class="com.map1.Course"/>
-       
-    </session-factory>
+	<session-factory>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/myhiber</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">12345678</property>
+		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="hbm2ddl.auto">create</property>
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+		<property name="hibernate.current_session_context_class">thread</property>
+		<mapping class="com.tut.ProjectWithMaven.Student" />
+		<mapping class="com.tut.ProjectWithMaven.Address" />
+		<mapping class="com.map.Question" />
+		<mapping class="com.map.Answer" />
+		<mapping class="com.map1.Instructor" />
+		<mapping class="com.map1.Course" />
+		<mapping class="com.map2.Employees" />
+		<mapping class="com.map2.Project" />
+	</session-factory>
 </hibernate-configuration>

@@ -18,7 +18,7 @@ public class MapDemo1 {
 		ins.setId(124);
 		ins.setFirstName("Himanshu");
 		ins.setLastName("Singh");
-	        ins.setEmail("himanshusingh0608@gmail.com");
+	ins.setEmail("himanshusingh0608@gmail.com");
 		
 		Course course1 = new Course();
 		course1.setCourseId(532);
@@ -43,7 +43,7 @@ public class MapDemo1 {
 		
 		Session s = factory.openSession();
 		Transaction tx = s.beginTransaction();
-		//Save
+		
 		s.save(ins);
 		s.save(course1);
 		s.save(course2);
