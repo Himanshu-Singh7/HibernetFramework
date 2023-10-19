@@ -25,8 +25,7 @@ public class Employees {
     		name= "emp_learn" , 
     		joinColumns = {@JoinColumn(name ="eid")},
     		inverseJoinColumns = {@JoinColumn(name= "pid")}
-    
-    		)
+              )
     private List<Project> project ;
 
 	public int getEmployeeId() {
