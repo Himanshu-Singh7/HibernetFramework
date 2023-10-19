@@ -18,7 +18,7 @@ public class MapDemo1 {
 		ins.setId(124);
 		ins.setFirstName("Himanshu");
 		ins.setLastName("Singh");
-	ins.setEmail("himanshusingh0608@gmail.com");
+	    ins.setEmail("himanshusingh0608@gmail.com");
 		
 		Course course1 = new Course();
 		course1.setCourseId(532);
@@ -52,6 +52,14 @@ public class MapDemo1 {
 		
 		// featching.....
 		Instructor instructor = (Instructor)s.get(Instructor.class, 124);
+		System.out.println(instructor.getId());
+		System.out.println(instructor.getFirstName());
+		System.out.println(instructor.getLastName());
+		System.out.println(instructor.getEmail());
+		
+		//LAZY Loading
+		System.out.println(instructor.getCourse().size());
+		
 		System.out.println(instructor.getFirstName());
 		
 		for(Course c :instructor.getCourse() ) {
