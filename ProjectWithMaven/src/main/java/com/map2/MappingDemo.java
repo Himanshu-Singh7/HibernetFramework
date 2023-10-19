@@ -37,7 +37,7 @@ public class MappingDemo {
      
      list2.add(project1);
      list2.add(project2);
-     //
+     // ManyToMany Mapping
      employees1.setProject(list2);
      project1.setEmployees(list1);
      
