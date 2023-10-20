@@ -2,8 +2,7 @@ package com.hql;
 
 import java.util.Arrays;
 import java.util.List;
-
-import org.hibernate.Query;
+import org.hibernate.query.*;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -47,7 +46,8 @@ public class HQLExample {
 
 //_______________________________Join___________________________________________________
 	 
-    Query query3 = s.createQuery("select i.id,i.firstName,i.lastName,i.email,t.title from Instructor as i INNER JOIN i.course as t");
+    Query query3 = 
+    s.createQuery("select i.id,i.firstName,i.lastName,i.email,t.title from Instructor as i INNER JOIN i.course as t");
     
    List<Object[]> list3 = query3.getResultList();
    for(Object[] arr : list3) {

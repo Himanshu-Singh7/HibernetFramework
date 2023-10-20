@@ -12,8 +12,8 @@ public class EmDemo {
         SessionFactory factory = cfg.buildSessionFactory();
         // Object 1
         Student student1 = new Student();
-        student1.setId(1423);
-        student1.setName("Bachau");
+        student1.setId(22);
+        student1.setName("Name22");
         student1.setCity("Varansi");
         Certificate certificate1 = new Certificate();
         certificate1.setCourse("Java Development");
@@ -21,8 +21,8 @@ public class EmDemo {
         student1.setCerti(certificate1);
         // Object 2
         Student student2 = new Student();
-        student2.setId(1493);
-        student2.setName("Ankit Tiwari");
+        student2.setId(23);
+        student2.setName("Name23");
         student2.setCity("Patana");
         Certificate certificate2 = new Certificate();
         certificate2.setCourse("Android Development");
@@ -30,8 +30,8 @@ public class EmDemo {
         student2.setCerti(certificate2);
         // Object 3
         Student student3 = new Student();
-        student3.setId(1495);
-        student3.setName("Rahul Singh");
+        student3.setId(24);
+        student3.setName("Name24");
         student3.setCity("Varansi");
         Certificate certificate3 = new Certificate();
         certificate3.setCourse("Data Science");
