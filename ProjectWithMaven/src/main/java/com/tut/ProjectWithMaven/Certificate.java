@@ -2,6 +2,7 @@ package com.tut.ProjectWithMaven;
 
 import javax.persistence.Embeddable;
 
+
 @Embeddable
 public class Certificate {
     private String course;
@@ -33,5 +34,7 @@ public class Certificate {
 		this.course = course;
 		this.duration = duration;
 	}
+	
+	
      
 }
