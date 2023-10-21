@@ -14,8 +14,7 @@ public class SQLExample {
 		cnf.configure("hibernate.cfg.xml");
 		SessionFactory factory = cnf.buildSessionFactory();
 		Session s = factory.openSession();
-		// Executing Native SQL Queries
-		
+		// Executing Native SQL Queries for retrive the data
 		String q = "Select * from Student";
 		NativeQuery nq = s.createSQLQuery(q);
 		
