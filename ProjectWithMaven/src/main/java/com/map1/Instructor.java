@@ -2,6 +2,7 @@ package com.map1;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -26,7 +27,7 @@ public class Instructor {
 	@Column(name = "email")
 	private String email;
 
-	@OneToMany(mappedBy = "instructor",fetch = FetchType.EAGER)
+	@OneToMany(mappedBy = "instructor",fetch = FetchType.EAGER,cascade = CascadeType.ALL)
 	private List<Course> course;
 
 	public Instructor() {

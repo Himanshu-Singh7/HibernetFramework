@@ -24,11 +24,11 @@ public class Course {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Course(int courseId, String title, Instructor instructor) {
+	public Course(int courseId, String title) {
 		super();
 		this.courseId = courseId;
 		this.title = title;
-		this.instructor = instructor;
+		
 	}
 
 	public int getCourseId() {

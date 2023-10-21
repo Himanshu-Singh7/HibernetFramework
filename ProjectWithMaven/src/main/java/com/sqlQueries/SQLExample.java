@@ -14,7 +14,8 @@ public class SQLExample {
 		cnf.configure("hibernate.cfg.xml");
 		SessionFactory factory = cnf.buildSessionFactory();
 		Session s = factory.openSession();
-		// Executing Native SQL Queries for retrive the data
+		// SQL
+		
 		String q = "Select * from Student";
 		NativeQuery nq = s.createSQLQuery(q);
 		
@@ -23,8 +24,6 @@ public class SQLExample {
 		for(Object [] student : list) {
 			System.out.println(student[3]+":"+student[4]);
 		}
-		
-		
 		
 		s.close();
 		factory.close();
