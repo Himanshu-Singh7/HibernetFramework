@@ -21,6 +21,8 @@ public class FirstLevelCache {
 		Student student1 = session.get(Student.class, 3);
 		System.out.println(student1);
 		System.out.println(session.contains(student1));
+		
+		
 
 		session.close();
 		factory.close();

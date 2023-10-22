@@ -14,7 +14,10 @@
 		<property name="show_sql">true</property>
 		<property name="format_sql">true</property>
 		<property name="hibernate.current_session_context_class">thread</property>
-		<mapping class="com.tut.ProjectWithMaven.Student" />
+		<property name="cache.use_second_Level_cache">true</property>
+		<property name="cache.region.factory_class">org.hibernate.cache.ehcache.internal.EhcacheRegionFactory</property>
+        
+        <mapping class="com.tut.ProjectWithMaven.Student" />
 		<mapping class="com.tut.ProjectWithMaven.Address" />
 		<mapping class="com.map.Question" />
 		<mapping class="com.map.Answer" />
