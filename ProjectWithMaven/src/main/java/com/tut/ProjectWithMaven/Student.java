@@ -17,7 +17,6 @@ public class Student {
 	private int id;
 	private String name;
 	private String city;
-	
 	private Certificate certi;
 	
 	public Student(int id, String name, String city, Certificate certi) {

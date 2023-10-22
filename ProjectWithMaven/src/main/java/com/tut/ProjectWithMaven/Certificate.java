@@ -34,6 +34,11 @@ public class Certificate {
 		this.course = course;
 		this.duration = duration;
 	}
+
+	@Override
+	public String toString() {
+		return "Certificate [course=" + course + ", duration=" + duration + "]";
+	}
 	
 	
      
