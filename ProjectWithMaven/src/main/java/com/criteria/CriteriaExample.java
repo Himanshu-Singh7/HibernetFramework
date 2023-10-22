@@ -18,9 +18,9 @@ public class CriteriaExample {
 		Criteria c = session.createCriteria(Student.class);
 		
 		//Giving some restiriction Restriction 
-//		c.add(Restrictions.eq("certi.course","Java Development"));
+    //		c.add(Restrictions.eq("certi.course","Java Development"));
 		// Greater than
-//		c.add(Restrictions.gt("id", 14));
+   //		c.add(Restrictions.gt("id", 14));
 		//Like 
 		c.add(Restrictions.like("certi.course", "Data%"));
 		
